@@ -14,6 +14,9 @@
 		3DE4DAD41476765101945408 /* libPods-myapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D43FF9D506E70904424FA7E9 /* libPods-myapp.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* myapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +77,6 @@
 				3B47C5AFCB8BDE514B7D1AC6 /* Pods-myapp.debug.xcconfig */,
 				8AC623DBF3A3E2CB072F81F2 /* Pods-myapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,32 +138,39 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
-				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
-					};
-				};
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "myapp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* myapp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4ECE48D82401B7A200E4C841 /* libRNCWebView-macOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libRNCWebView-macOS.a";
+			remoteRef = 4ECE48D72401B7A200E4C841 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
@@ -265,6 +274,46 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAppLoaderProvider\"",
+					"\"${PODS_ROOT}/Headers/Public/EXConstants\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFileSystem\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPermissions\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/FBReactNativeSpec\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTTypeSafety\"",
+					"\"${PODS_ROOT}/Headers/Public/RNGestureHandler\"",
+					"\"${PODS_ROOT}/Headers/Public/RNReanimated\"",
+					"\"${PODS_ROOT}/Headers/Public/RNScreens\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/UMBarCodeScannerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCameraInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMConstantsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCore\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFaceDetectorInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFileSystemInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFontInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMImageLoaderInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMPermissionsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMReactNativeAdapter\"",
+					"\"${PODS_ROOT}/Headers/Public/UMSensorsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMTaskManagerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_ROOT)/../node_modules/react-native-webview/ios\"",
+				);
 				INFOPLIST_FILE = myapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -284,6 +333,46 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/EXAppLoaderProvider\"",
+					"\"${PODS_ROOT}/Headers/Public/EXConstants\"",
+					"\"${PODS_ROOT}/Headers/Public/EXFileSystem\"",
+					"\"${PODS_ROOT}/Headers/Public/EXPermissions\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/FBReactNativeSpec\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTTypeSafety\"",
+					"\"${PODS_ROOT}/Headers/Public/RNGestureHandler\"",
+					"\"${PODS_ROOT}/Headers/Public/RNReanimated\"",
+					"\"${PODS_ROOT}/Headers/Public/RNScreens\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/UMBarCodeScannerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCameraInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMConstantsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMCore\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFaceDetectorInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFileSystemInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMFontInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMImageLoaderInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMPermissionsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMReactNativeAdapter\"",
+					"\"${PODS_ROOT}/Headers/Public/UMSensorsInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/UMTaskManagerInterface\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"\"$(PODS_ROOT)/../node_modules/react-native-webview/ios\"",
+				);
 				INFOPLIST_FILE = myapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
