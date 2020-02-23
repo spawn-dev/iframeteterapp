@@ -3,6 +3,7 @@ package com.myapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.swmansion.reanimated.ReanimatedPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -17,6 +18,8 @@ import org.unimodules.core.interfaces.SingletonModule;
 import expo.modules.constants.ConstantsPackage;
 import expo.modules.permissions.PermissionsPackage;
 import expo.modules.filesystem.FileSystemPackage;
+import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+import com.swmansion.rnscreens.RNScreensPackage;
 
 import java.util.Arrays;
 import java.util.List;

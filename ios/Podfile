@@ -43,6 +43,8 @@ target 'myapp' do
   use_unimodules!
   pod 'react-native-webview', :path => '../node_modules/react-native-webview'
 
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+
 end
 
 use_native_modules!
