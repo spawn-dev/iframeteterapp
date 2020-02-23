@@ -3,6 +3,7 @@ package com.myapp;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.swmansion.reanimated.ReanimatedPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -43,6 +44,7 @@ public class MainApplication extends Application implements ReactApplication {
           new ReanimatedPackage(),
           new RNGestureHandlerPackage(),
           new RNScreensPackage(),
+          new RNCWebViewPackage(),
           new ModuleRegistryAdapter(mModuleRegistryProvider)
       );
     }
